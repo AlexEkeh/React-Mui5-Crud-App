@@ -12,17 +12,17 @@ server.use(cors({ origin: true, credentials: true }));
 server.use(jsonServer.bodyParser);
 
 // Serve static assets if in Production
-// if (process.env.NOED_ENV === "production") {
-//   server.use(
-//     jsonServer.defaults({
-//       static: path.resolve(__dirname, "Client", "build"),
-//     })
-//   );
+if (process.env.NOED_ENV === "production") {
+  server.use(
+    jsonServer.defaults({
+      static: path.resolve(__dirname, "Client", "build"),
+    })
+  );
 
-//   server.get("*", (_req, res) => {
-//     res.sendFile(path.resolve(__dirname, "Client", "build", "index.html"));
-//   });
-// }
+  server.get("*", (_req, res) => {
+    res.sendFile(path.resolve(__dirname, "Client", "build", "index.html"));
+  });
+}
 
 server.listen(port, () => {
   console.info(`Server running on port ${port}`);
