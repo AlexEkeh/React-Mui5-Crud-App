@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "first_name": "Andersmod",
+      "email": "acannavan0@bloglovin.com",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "first_name": "Myra",
+      "email": "mtenaunt1@desdev.cn",
+      "gender": "Female"
+    },
+    {
+      "first_name": "Lizzy",
+      "email": "lizzy@gmail.com",
+      "gender": "Female",
+      "id": 3
+    },
+    {
+      "first_name": "AndersmodTheSecond",
+      "email": "bondz@email.com",
+      "gender": "Male",
+      "id": 4
+    }
+  ]
+}
