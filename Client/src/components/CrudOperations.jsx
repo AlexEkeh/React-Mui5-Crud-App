@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const url = 'http://localhost:5000/users';
-const url = 'https://react-mui5-crud-app.herokuapp.com/users';
+const url = "https://react-mui5-crud-app.herokuapp.com/users/"
 
 const addUser = async (data) => {
     try {

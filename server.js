@@ -8,7 +8,12 @@ dotenv.config();
 const port = process.env.PORT;
 
 server.use(router);
-server.use(cors({ origin: true, credentials: true }));
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
+server.use(cors(corsOptions));
 server.use(jsonServer.bodyParser);
 
 // Serve static assets if in Production
