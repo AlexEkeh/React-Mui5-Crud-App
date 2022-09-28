@@ -5,4 +5,7 @@ The application performs a basic CREATE, READ, UPDATE and DELETE operation with 
 
 Please feel free to use the application and have some fun doing that.
 
+Application was hosted on Netlify
+# https://react-mui5-crud-app.netlify.app
+
 ENJOY!
