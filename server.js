@@ -12,7 +12,7 @@ server.use(router);
 server.use(jsonServer.bodyParser);
 
 // Serve static assets if in Production
-if (process.env.NOED_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
   server.use(
     jsonServer.defaults({
       static: path.resolve(__dirname, "Client", "build"),
